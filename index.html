@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#030812">
+  <title>Circle Electric Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="login-showcase" aria-label="Circle electric login demo">
+      <div class="electric-circle">
+        <div class="circle-core">
+          <form class="login-form" id="loginForm" novalidate>
+            <h1>Login</h1>
+
+            <label class="sr-only" for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="Username" autocomplete="username" required>
+
+            <label class="sr-only" for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" required>
+
+            <button type="submit" id="signInButton">Sign In</button>
+            <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+
+      <h2 class="caption-title">Circle Electric Login</h2>
+      <div class="comment-label">Comment "Login" for code</div>
+    </section>
+
+    <section class="code-section">
+      <div class="code-header">
+        <div>
+          <span class="eyebrow">HTML SOURCE</span>
+          <h2>Login Form Markup</h2>
+        </div>
+        <button type="button" class="copy-button" id="copyButton">Copy HTML</button>
+      </div>
+      <pre><code id="htmlSnippet">&lt;div class="circle"&gt;
+  &lt;div class="card"&gt;
+    &lt;h2&gt;Login&lt;/h2&gt;
+    &lt;div class="input-box"&gt;
+      &lt;input type="text" placeholder="Username"&gt;
+    &lt;/div&gt;
+    &lt;div class="input-box"&gt;
+      &lt;input type="password" placeholder="Password"&gt;
+    &lt;/div&gt;
+    &lt;button&gt;Sign In&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </section>
+    <footer>Built with HTML, CSS and JavaScript · No dependencies</footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
